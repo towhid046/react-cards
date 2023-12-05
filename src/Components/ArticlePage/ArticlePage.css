@@ -1,0 +1,26 @@
+.comments_heading{
+    text-align: center;
+    background-color: rgb(96, 156, 156);
+    padding: 20px 0;
+}
+.comments_page{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1080px;
+    margin-inline: auto;
+    padding: 20px;
+}
+
+
+@media (max-width:768px) {
+    .comments_page{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:576px) {
+    .comments_page{
+        grid-template-columns:auto;
+    }
+}
+
